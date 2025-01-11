@@ -1,3 +1,7 @@
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <h1>라우팅 시험</h1>
+    </>
+  );
 }
