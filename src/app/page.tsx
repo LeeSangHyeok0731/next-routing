@@ -28,8 +28,9 @@ export default function Home() {
   return (
     <>
       <h1>라우팅 시험</h1>
-      <div onClick={countUp}>증가</div>
-      <div onClick={countDown}>감소</div>
+      <div>{count}</div>
+      <button onClick={countUp}>증가</button>
+      <button onClick={countDown}>감소</button>
       <button onClick={handleClickPost}>Post 페이지 가기</button>
       <button onClick={handleClickLogin}>Login 페이지 가기</button>
     </>
