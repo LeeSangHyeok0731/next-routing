@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleClickPost = () => {
-    router.push("/post/[1]"); // '/next' 페이지로 이동
+    router.push("/post/1"); // '/next' 페이지로 이동
   };
 
   const handleClickLogin = () => {
