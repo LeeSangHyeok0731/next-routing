@@ -1,4 +1,6 @@
-import { useRouter } from "next/router";
+"use client"; // 클라이언트 컴포넌트 지시어 추가
+
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
