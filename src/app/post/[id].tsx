@@ -2,9 +2,12 @@
 
 import { useRouter } from "next/navigation";
 
-const Post = () => {
+interface PostPageProps {
+  params: { id: string };
+}
+
+const Post = ({ params }: PostPageProps) => {
   const router = useRouter();
-  const { id } = router.query;
 
   const handleClickHome = () => {
     router.push("/");
@@ -12,8 +15,8 @@ const Post = () => {
 
   return (
     <>
-      <p>Post ID: {id}</p>
-      <button onClick={handleClickHome}>홈으로 가기</button>;
+      <p>Post ID: {params.id}</p>
+      <button onClick={handleClickHome}>홈으로 가기</button>
     </>
   );
 };
